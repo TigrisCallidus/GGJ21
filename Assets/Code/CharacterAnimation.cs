@@ -6,6 +6,7 @@ public class CharacterAnimation : MonoBehaviour
 {
     public GameObject maskHolder;
     public float walkingSpeed = 0.5f;
+    public GameObject wolleObject;
 
     Animator anim;
     float fraction = 0f;
@@ -14,9 +15,6 @@ public class CharacterAnimation : MonoBehaviour
 
     Vector3 startPos;
     Vector3 desPos;
-
-
-
 
     private void OnEnable()
     {
@@ -112,6 +110,12 @@ public class CharacterAnimation : MonoBehaviour
             }
             
         }
+        if (MazeController.MaxRopeLength < 1) MazeController.MaxRopeLength = 1;
+        float wolleXFraction = (float)MazeController.CurrentRopeLength / (float)MazeController.MaxRopeLength;
+        wolleObject.transform.localScale = new Vector3(Mathf.Lerp(0.5f, 1f, wolleXFraction),wolleObject.transform.localScale.y, wolleObject.transform.localScale.z);
+
+
+
     }
 
 
@@ -143,5 +147,8 @@ public class CharacterAnimation : MonoBehaviour
     {
         Go(WalkDirection.up,true, true);
     }
+
+
+
 
 }

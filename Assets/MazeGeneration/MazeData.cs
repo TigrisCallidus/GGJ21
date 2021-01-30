@@ -71,9 +71,11 @@ public class MazeCell {
 
     public bool HasChips = false;
 
-    public bool HasRope;
+    public bool HasRope = false;
 
-    public int Distance;
+    public int Distance = 0;
+
+    public bool IsExit = false;
 
 }
 
@@ -122,7 +124,6 @@ public class MazeTile {
     public bool OpenRight = false;
     public bool OpenDown = false;
     public bool OpenLeft = false;
-
 }
 
 [System.Serializable]

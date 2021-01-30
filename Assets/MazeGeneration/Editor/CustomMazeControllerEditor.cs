@@ -13,12 +13,14 @@ public class CustomMazeControllerEditor : Editor {
     Texture2D greenBack;
     Texture2D violetBack;
     Texture2D yellowBack;
+    Texture2D turquiseBack;
 
     GUIStyle blue;
     GUIStyle red;
     GUIStyle green;
     GUIStyle violet;
     GUIStyle yellow;
+    GUIStyle turquise;
 
     void OnEnable() {
         targetController = target as MazeController;
@@ -29,8 +31,7 @@ public class CustomMazeControllerEditor : Editor {
         greenBack = MakeTex(1, 1, new Color(0f, 1.0f, 0f, 0.3f));
         violetBack = MakeTex(1, 1, new Color(1.0f, 0f, 1.0f, 0.2f));
         yellowBack = MakeTex(1, 1, new Color(1.0f, 1.0f, 0f, 0.2f));
-
-
+        turquiseBack = MakeTex(1, 1, new Color(0.0f, 1.0f, 1.0f, 0.2f));
 
     }
 
@@ -65,15 +66,20 @@ public class CustomMazeControllerEditor : Editor {
         yellow = new GUIStyle(EditorStyles.textField);
         yellow.normal.background = yellowBack;
 
+        turquise = new GUIStyle(EditorStyles.textField);
+        turquise.normal.background = turquiseBack;
+
         //Spawn fields to represent the Maze. Walls get blue background open places red.
         EditorGUILayout.BeginHorizontal();
         for (int x = 0; x < targetController.Maze.X; x++) {
             EditorGUILayout.BeginVertical();
-            for (int y = targetController.Maze.Y-1; y >=0 ; y--) {
+            for (int y = targetController.Maze.Y - 1; y >= 0; y--) {
                 if (targetController.Maze[x, y].HasPlayer) {
                     targetController.Maze[x, y].Number = EditorGUILayout.IntField(targetController.Maze[x, y].Number, green);
-                } else if (targetController.Maze[x, y].Number>0) {
+                } else if (targetController.Maze[x, y].Number > 0) {
                     targetController.Maze[x, y].Number = EditorGUILayout.IntField(targetController.Maze[x, y].Number, blue);
+                } else if (targetController.Maze[x, y].IsExit) {
+
                 } else {
                     if (targetController.Maze[x, y].HasRope) {
                         targetController.Maze[x, y].Number = EditorGUILayout.IntField(targetController.Maze[x, y].Number, violet);

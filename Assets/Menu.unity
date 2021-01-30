@@ -1196,6 +1196,7 @@ GameObject:
   - component: {fileID: 1735545296}
   - component: {fileID: 1735545298}
   - component: {fileID: 1735545297}
+  - component: {fileID: 1735545299}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -1240,7 +1241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dabd152c96bf07243a54ef9c9b48141d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fa8dd9ce9d4e3c478b03fcd66b2504b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1258,6 +1259,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735545295}
   m_CullTransparentMesh: 0
+--- !u!95 &1735545299
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735545295}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b042097750d5d214c922c68949b9c317, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1804870014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1444,7 @@ GameObject:
   - component: {fileID: 1862749458}
   - component: {fileID: 1862749460}
   - component: {fileID: 1862749459}
+  - component: {fileID: 1862749461}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1468,7 +1489,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dabd152c96bf07243a54ef9c9b48141d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fa8dd9ce9d4e3c478b03fcd66b2504b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1486,3 +1507,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862749457}
   m_CullTransparentMesh: 0
+--- !u!95 &1862749461
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862749457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b042097750d5d214c922c68949b9c317, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

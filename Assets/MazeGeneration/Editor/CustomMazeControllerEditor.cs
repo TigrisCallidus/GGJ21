@@ -45,6 +45,10 @@ public class CustomMazeControllerEditor : Editor {
             targetController.GenerateMaze();
         }
 
+        if (GUILayout.Button("Generate Path")) {
+            targetController.GeneratePaths();
+        }
+
         //if the tiles should be hidden stop here
         if (targetController.HideTiles) {
             return;
@@ -79,7 +83,7 @@ public class CustomMazeControllerEditor : Editor {
                 } else if (targetController.Maze[x, y].Number > 0) {
                     targetController.Maze[x, y].Number = EditorGUILayout.IntField(targetController.Maze[x, y].Number, blue);
                 } else if (targetController.Maze[x, y].IsExit) {
-
+                    targetController.Maze[x, y].Number = EditorGUILayout.IntField(targetController.Maze[x, y].Number, turquise);
                 } else {
                     if (targetController.Maze[x, y].HasRope) {
                         targetController.Maze[x, y].Number = EditorGUILayout.IntField(targetController.Maze[x, y].Number, violet);

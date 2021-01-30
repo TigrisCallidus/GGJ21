@@ -6,6 +6,10 @@ public class MazeController : MonoBehaviour {
 
     public bool HideTiles;
 
+    public int AdditionalGaps = 10;
+
+    public int MinimumPlus = 5;
+
     public BaseMaze MazeGenerator;
 
     public Vector2Int PlayerPosition;
@@ -34,6 +38,8 @@ public class MazeController : MonoBehaviour {
 
     public void GenerateMaze() {
         MazeGenerator.GenerateMaze();
+        MazeGenerator.AdditionalGaps = AdditionalGaps;
+        MazeGenerator.GenerateGaps();
 
         this.Maze = MazeGenerator.Maze;
         PlayerPosition = new Vector2Int(Maze.X / 2, Maze.Y / 2);
@@ -50,6 +56,14 @@ public class MazeController : MonoBehaviour {
 
         bool canWalk = false;
         bool goBack = direction == Maze[PlayerPosition.x, PlayerPosition.y].LastCell;
+
+        if (CurrentRopeLength<=0 &&!goBack) {
+            return false;
+        }
+
+        if (goBack) {
+            return true;
+        }
 
         switch (direction) {
             case WalkDirection.none:
@@ -153,11 +167,12 @@ public class MazeController : MonoBehaviour {
 
     public void DropRope() {
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = true;
+        CurrentRopeLength--;
     }
 
     public void PickupRope() {
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = false;
-
+        CurrentRopeLength++;
     }
 
     public void DoMovement(Vector2Int newPosition) {
@@ -171,13 +186,16 @@ public class MazeController : MonoBehaviour {
         Queue<Vector2Int> positions = new Queue<Vector2Int>();
 
         positions.Enqueue(PlayerPosition);
-
+        int count = 0;
         while (positions.Count>0) {
             Vector2Int pos = positions.Dequeue();
+            AddNeighbours(positions, pos);
+            count++;
+            if (count>10000) {
+                break;
+            }
         }
-
-
-
+        CloseMaze();
     }
 
     void AddNeighbours(Queue<Vector2Int> queue, Vector2Int pos) {
@@ -222,6 +240,54 @@ public class MazeController : MonoBehaviour {
             }
         }
 
+    }
+
+    public void CloseMaze() {
+
+        int min = 100000;
+
+        for (int i = 0; i < Maze.X; i++) {
+            if (Maze[i,1].IsWall) {
+                Maze[i, 0].Number = 1;
+            } else {
+                if (Maze[i, 0].Distance < min && Maze[i, 0].Distance>0) {
+                    min = Maze[i, 0].Distance;
+                }
+            }
+        }
+
+        for (int i = 0; i < Maze.Y; i++) {
+            if (Maze[1, i].IsWall) {
+                Maze[0, i].Number = 1;
+
+            } else {
+                if (Maze[0, i].Distance < min && Maze[0, i].Distance>0) {
+                    min = Maze[0, i].Distance;
+                }
+            }
+        }
+
+        int maxDistance = min + MinimumPlus;
+
+
+        for (int i = 0; i < Maze.X; i++) {
+            if (Maze[i, 0].Distance>maxDistance) {
+                Maze[i, 0].Number = 1;
+            } else {
+                Maze[i, 0].IsExit = true;
+            } 
+        }
+
+        for (int i = 0; i < Maze.Y; i++) {
+            if (Maze[0, i].Distance > maxDistance) {
+                Maze[0, i].Number = 1;
+
+            } else {
+                Maze[0, i].IsExit = true;
+            }
+        }
+
+        MaxRopeLength = maxDistance;
     }
 
     // Update is called once per frame

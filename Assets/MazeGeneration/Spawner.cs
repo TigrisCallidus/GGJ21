@@ -38,12 +38,12 @@ public class Spawner : MonoBehaviour {
         }
         SpawnedObjects = new List<GameObject>();
         Camera.orthographicSize = 0.5f * Mathf.Max(Maze.X, Maze.Y);
-        Vector3 StartPos = new Vector3(-0.5f*Maze.X+0.5f, 0.5f, 0.5f*Maze.Y-0.5f);
+        Vector3 StartPos = new Vector3(-0.5f*Maze.X+0.5f, 0.5f, -0.5f*Maze.Y+0.5f);
         Vector3 spawnPosition;
         for (int i = 0; i < Maze.X; i++) {
             for (int j = 0; j < Maze.Y; j++) {
                 if (Maze.Maze[i,j].Number>0) {
-                    spawnPosition = StartPos + new Vector3(i, 0, -j);
+                    spawnPosition = StartPos + new Vector3(i, 0, j);
                     GameObject wall = Instantiate(WallPrefab, spawnPosition, Quaternion.identity, this.transform);
                     SpawnedObjects.Add(wall);
                 }

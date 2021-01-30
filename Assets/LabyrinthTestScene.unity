@@ -371,198 +371,1010 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Maze:
-    X: 13
-    Y: 13
+    X: 14
+    Y: 14
     Columns:
     - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
     - Elements:
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
     - Elements:
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
     - Elements:
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-    - Elements:
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-    - Elements:
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-    - Elements:
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
       - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-    - Elements:
-      - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-    - Elements:
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-    - Elements:
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-    - Elements:
-      - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 1
-      - Number: 0
-      - Number: 1
-      - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 1
-      - Number: 1
-      - Number: 1
-    - Elements:
-      - Number: 1
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 0
-      - Number: 1
-    - Elements:
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
-      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        Distance: 0
   HideTiles: 0
   WaitTime: 0.5
-  newX: 13
-  newY: 13
-  Algorithm: 0
+  newX: 14
+  newY: 14
+  Algorithm: 2
   placementThreshold: 0.1
-  Advanced: 0
+  Advanced: 1
   AdditionalGaps: 0
   GapType: 0
   FileName: 

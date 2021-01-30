@@ -65,7 +65,7 @@ public class CustomBazeMazeInscpector : Editor {
         EditorGUILayout.BeginHorizontal();
         for (int x = 0; x < targetMaze.X; x++) {
             EditorGUILayout.BeginVertical();
-            for (int y = 0; y < targetMaze.Y; y++) {
+            for (int y = targetMaze.Y - 1; y >= 0; y--) {
                 if (targetMaze.Maze[x, y].Number>0) {
                     targetMaze.Maze[x, y].Number = EditorGUILayout.IntField(targetMaze.Maze[x, y].Number, blue);
                 } else {

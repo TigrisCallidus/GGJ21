@@ -64,6 +64,25 @@ public class MazeCell {
             return Number > 0;
         }
     }
+
+    public WalkDirection LastCell = WalkDirection.none;
+
+    public bool HasPlayer = false;
+
+    public bool HasChips = false;
+
+    public bool HasRope;
+
+    public int Distance;
+
+}
+
+public enum WalkDirection {
+    none,
+    up,
+    right,
+    down,
+    left
 }
 
 [System.Serializable]

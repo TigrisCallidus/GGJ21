@@ -68,9 +68,7 @@ public class MazeController : MonoBehaviour {
         bool canWalk = false;
         bool goBack = direction == Maze[PlayerPosition.x, PlayerPosition.y].LastCell;
 
-        if (CurrentRopeLength <= 0 && !goBack) {
-            return false;
-        }
+
 
         if (goBack) {
             return true;
@@ -106,6 +104,15 @@ public class MazeController : MonoBehaviour {
             default:
                 break;
         }
+        Character.Go(direction, false, false);
+        if (CurrentRopeLength <= 0 && !goBack) {
+            canWalk= false;
+        }
+
+        if (!canWalk) {
+
+        }
+
         return canWalk;
     }
 
@@ -160,7 +167,9 @@ public class MazeController : MonoBehaviour {
 
 
         //Do walk
+
         DoMovement(newPosition);
+        Character.Go(direction, true, goBack);
 
 
         if (goBack) {
@@ -199,11 +208,11 @@ public class MazeController : MonoBehaviour {
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = false;
         PlayerPosition = newPosition;
         //TODO link real movement
-
+        /*
         if (Character != null) {
             Character.transform.position = new Vector3(PlayerPosition.x - Maze.X / 2 + 0.5f, 0.5f, PlayerPosition.y - Maze.Y / 2 + 1);
         }
-
+        */
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = true;
 
     }
@@ -327,6 +336,8 @@ public class MazeController : MonoBehaviour {
         int rnd = Random.Range(0, ZweifelSprites.Length);
 
         //TODO eating animation
+        Character.EatChips();
+
         Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetChips(ZweifelSprites[rnd]);
 
 

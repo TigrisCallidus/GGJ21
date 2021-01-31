@@ -108,6 +108,9 @@ public class CharacterAnimation : MonoBehaviour
     {
         if (onWalk)
         {
+            if (Time.timeScale < 0.5f) walkingSoundSource.Stop();
+
+
             if (fraction < 1)
             {
                 fraction += Time.deltaTime * walkingSpeed;

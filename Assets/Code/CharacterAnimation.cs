@@ -12,8 +12,8 @@ public class CharacterAnimation : MonoBehaviour
     public AudioSource walkingSoundSource;
     public AudioClip walkNo;
     public AudioClip eatingChips;
-
-
+    public AudioClip noRope;
+    public AudioClip collectingRope;
 
 
     Animator anim;
@@ -76,6 +76,7 @@ public class CharacterAnimation : MonoBehaviour
                 break;
         }
 
+        
 
 
         if (_canWalkThere)
@@ -86,6 +87,11 @@ public class CharacterAnimation : MonoBehaviour
             onWalk = true;
             anim.SetBool("Idle", false);
             walkingSoundSource.Play();
+            if (onRopeCollecting)
+            {
+                soundSource.PlayOneShot(collectingRope);
+            }
+
         }
         else
         {
@@ -136,7 +142,10 @@ public class CharacterAnimation : MonoBehaviour
         soundSource.PlayOneShot(eatingChips);
     }
 
-
+    public void NoRope()
+    {
+        soundSource.PlayOneShot(noRope);
+    }
 
 
     [ContextMenu("Go Up")]

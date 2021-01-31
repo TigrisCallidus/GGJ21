@@ -13,6 +13,8 @@ public class StartTheMadness : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public float timeToTravel = 10f;
     public int attemptsToSucces = 3;
 
+    public AudioClip[] buttonSounds;
+
 
 
     Vector3 startPosition;
@@ -25,6 +27,8 @@ public class StartTheMadness : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         if (!onPointer && !theEnd)
         {
+            int rand = Random.Range(0, buttonSounds.Length);
+            GetComponent<AudioSource>().PlayOneShot(buttonSounds[rand]);
             GetComponent<Animator>().SetTrigger("Jittering");
             onPointer = true;
             StopAllCoroutines();
@@ -43,6 +47,7 @@ public class StartTheMadness : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        
 
         if (currentAttempt >= attemptsToSucces)
         {

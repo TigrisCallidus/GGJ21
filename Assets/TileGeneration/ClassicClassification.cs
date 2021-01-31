@@ -16,8 +16,10 @@ public class ClassicClassification : TileClassificationAlgorithm {
 
         bool leftOpen = isEmpty(x - 1, y);
         bool rightOpen = isEmpty(x + 1, y);
-        bool topOpen = isEmpty(x, y - 1);
-        bool botOpen = isEmpty(x, y + 1);
+
+        //
+        bool topOpen = isEmpty(x, y + 1);
+        bool botOpen = isEmpty(x, y - 1);
 
 
         if (leftOpen && rightOpen && topOpen && botOpen) {

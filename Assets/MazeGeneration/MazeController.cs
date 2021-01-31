@@ -159,7 +159,7 @@ public class MazeController : MonoBehaviour {
         //Debug.Log(goBack);
 
         if (!goBack) {
-            DropRope();
+            DropRope(Maze[PlayerPosition.x, PlayerPosition.y].LastCell, direction);
         } else {
             Maze[PlayerPosition.x, PlayerPosition.y].LastCell = WalkDirection.none;
         }
@@ -191,10 +191,49 @@ public class MazeController : MonoBehaviour {
     }
 
 
-    public void DropRope() {
+    public void DropRope( WalkDirection lastDirection, WalkDirection walkDirection) {
+
+        int sprite = 0;
+        float rotation = 0;
+        if (lastDirection == WalkDirection.none) {
+            Debug.Log(walkDirection);
+            sprite = 0;
+            if (walkDirection == WalkDirection.right) {
+                rotation = 0;
+            } else if (walkDirection == WalkDirection.up) {
+                rotation = 90;
+            } else if (walkDirection == WalkDirection.down) {
+                rotation = 270;
+            } else if (walkDirection == WalkDirection.left) {
+                rotation = 180;
+            }
+        } else if ((lastDirection== WalkDirection.left || lastDirection== WalkDirection.right)
+            && (walkDirection == WalkDirection.left || walkDirection == WalkDirection.right))
+            {
+            sprite = 1;
+        } else if ((lastDirection == WalkDirection.up || lastDirection == WalkDirection.down)
+            && (walkDirection == WalkDirection.up || walkDirection == WalkDirection.down)) {
+            sprite = 6;
+        } else if ((lastDirection == WalkDirection.left && walkDirection == WalkDirection.up)
+             || (lastDirection == WalkDirection.up && walkDirection == WalkDirection.left)) {
+            sprite = 2;
+        } else if ((lastDirection == WalkDirection.right && walkDirection == WalkDirection.up)
+              || (lastDirection == WalkDirection.up && walkDirection == WalkDirection.right)) {
+            sprite = 3;
+        } else if ((lastDirection == WalkDirection.left && walkDirection == WalkDirection.down)
+              || (lastDirection == WalkDirection.down && walkDirection == WalkDirection.left)) {
+            sprite = 5;
+        } else if ((lastDirection == WalkDirection.right && walkDirection == WalkDirection.down)
+               || (lastDirection == WalkDirection.down && walkDirection == WalkDirection.right)) {
+            sprite = 4;
+        }
+
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = true;
         CurrentRopeLength--;
-        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(RopeTypes[1].Sprites[0]);
+        int rnd = Random.Range(0,RopeTypes[sprite].Sprites.Length);
+        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(RopeTypes[sprite].Sprites[rnd], rotation);
+
+
     }
 
     public void PickupRope() {

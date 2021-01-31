@@ -14,12 +14,15 @@ public class FloorTile : MonoBehaviour
         FloorSprite.sprite = sprite;
     }
 
-    public void SetRope(Sprite sprite) {
+    public void SetRope(Sprite sprite, float rotation=0) {
         RopeOverlay.sprite = sprite;
         if (sprite==null) {
             RopeOverlay.gameObject.SetActive(false);
         } else {
             RopeOverlay.gameObject.SetActive(true);
+            //if (rotation>0) {
+            RopeOverlay.transform.localRotation = Quaternion.Euler(65, 0, rotation);
+            //}
         }
     }
 

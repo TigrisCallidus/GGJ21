@@ -16,6 +16,7 @@ public class UI_Logic : MonoBehaviour
 
     public RectTransform chipsBarRecTrans;
     public TextMeshProUGUI ropeLength;
+    public Animator ropeAnim;
     private bool onNoRope = false;
 
     public RectTransform hungerBarRecTrans;
@@ -49,12 +50,14 @@ public class UI_Logic : MonoBehaviour
             {
                 onNoRope = true;
                 ropeLength.GetComponent<Animator>().SetBool("noRope", true);
+                ropeAnim.SetFloat("jittering", 1f);
             }
         }
         else
         {
             if (onNoRope)
             {
+                ropeAnim.SetFloat("jittering", 0f);
                 onNoRope = false;
                 ropeLength.GetComponent<Animator>().SetBool("noRope", false);
             }

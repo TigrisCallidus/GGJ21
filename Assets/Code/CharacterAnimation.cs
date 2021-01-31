@@ -19,6 +19,7 @@ public class CharacterAnimation : MonoBehaviour
     private void OnEnable()
     {
         anim = GetComponent<Animator>();
+        anim.SetBool("Idle", true);
     }
 
     public void Go(WalkDirection _dir , bool _canWalkThere, bool _onRopeCollecting)
@@ -75,6 +76,7 @@ public class CharacterAnimation : MonoBehaviour
             maskHolder.SetActive(true);
             fraction = 0f;
             onWalk = true;
+            anim.SetBool("Idle", false);
         }
     }
 
@@ -100,9 +102,8 @@ public class CharacterAnimation : MonoBehaviour
             }
             else
             {
+                anim.SetBool("Idle", true);
                 onWalk = false;
-                anim.SetFloat("dirX", 0f);
-                anim.SetFloat("dirY", 0f);
                 maskHolder.SetActive(false);
                 maskHolder.transform.localScale = Vector3.one;
                 fraction = 0f;
@@ -113,10 +114,13 @@ public class CharacterAnimation : MonoBehaviour
         if (MazeController.MaxRopeLength < 1) MazeController.MaxRopeLength = 1;
         float wolleXFraction = (float)MazeController.CurrentRopeLength / (float)MazeController.MaxRopeLength;
         wolleObject.transform.localScale = new Vector3(Mathf.Lerp(0.5f, 1f, wolleXFraction),wolleObject.transform.localScale.y, wolleObject.transform.localScale.z);
-
-
-
     }
+
+    public void EatChips()
+    {
+        anim.SetTrigger("Eat");
+    }
+
 
 
 

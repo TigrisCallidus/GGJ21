@@ -16,6 +16,7 @@ public class UI_Logic : MonoBehaviour
 
     public RectTransform chipsBarRecTrans;
     public TextMeshProUGUI ropeLength;
+    private bool onNoRope = false;
 
     public GameObject inGameMenu;
     public GameObject winMenu;
@@ -30,6 +31,23 @@ public class UI_Logic : MonoBehaviour
     private void Update()
     {
         ropeLength.text = MazeController.CurrentRopeLength + " m";
+
+        if (MazeController.CurrentRopeLength == 0)
+        {
+            if (!onNoRope)
+            {
+                onNoRope = true;
+                ropeLength.GetComponent<Animator>().SetBool("noRope", true);
+            }
+        }
+        else
+        {
+            if (onNoRope)
+            {
+                onNoRope = false;
+                ropeLength.GetComponent<Animator>().SetBool("noRope", false);
+            }
+        }
 
         float rectX = 100 - ((float)MazeController.CurrentZweifel / (float)MazeController.MaxZweifel * 100f);
         chipsBarRecTrans.sizeDelta = new Vector2(rectX, chipsBarRecTrans.sizeDelta.y);

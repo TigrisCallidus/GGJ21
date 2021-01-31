@@ -247,20 +247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1085817849508822403, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
-        type: 3}
-      propertyPath: walkingSpeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1085817849508822407, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
         type: 3}
       propertyPath: m_Name
       value: Character
-      objectReference: {fileID: 0}
-    - target: {fileID: 1085817850094406455, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
-        type: 3}
-      propertyPath: orthographic size
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d9be0909fe02a49b154c51ab8bb7c0, type: 3}
@@ -1054,7 +1044,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HideTiles: 1
   AdditionalGaps: 50
-  MinimumPlus: 5
+  MinimumPlus: 10
+  MinRange: 3
   PlayerPosition: {x: 80, y: 8}
   AnimationTime: 1
   MazeGenerator: {fileID: 1106729824}
@@ -5950,13 +5941,13 @@ MonoBehaviour:
         Wall: {fileID: 0}
   HideTiles: 1
   WaitTime: 0.5
-  newX: 80
-  newY: 80
+  newX: 52
+  newY: 52
   Algorithm: 2
   placementThreshold: 0.1
   Advanced: 1
   AdditionalGaps: 50
-  GapType: 0
+  GapType: 3
   FileName: 
 --- !u!4 &1106729825
 Transform:

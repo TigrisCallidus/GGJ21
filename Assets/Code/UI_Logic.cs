@@ -44,9 +44,7 @@ public class UI_Logic : MonoBehaviour
             }
             else if (currentState == UIState.pause)
             {
-                Time.timeScale = 1f;
-                currentState = UIState.game;
-                inGameMenu.SetActive(false);
+                ResumeGame();
             }
         }
     }
@@ -71,4 +69,16 @@ public class UI_Logic : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        currentState = UIState.game;
+        inGameMenu.SetActive(false);
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
+    }
 }

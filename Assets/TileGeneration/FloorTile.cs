@@ -10,6 +10,8 @@ public class FloorTile : MonoBehaviour
 
     public SpriteRenderer CoockieOverlay;
 
+    public GameObject Exit;
+
     public void SetFloor(Sprite sprite) {
         FloorSprite.sprite = sprite;
     }
@@ -33,5 +35,9 @@ public class FloorTile : MonoBehaviour
         } else {
             CoockieOverlay.gameObject.SetActive(true);
         }
+    }
+
+    public void ActivateExit() {
+        Exit.SetActive(true);
     }
 }

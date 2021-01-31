@@ -24,6 +24,8 @@ public class MazeController : MonoBehaviour {
     public static int MaxZweifel = 10;
     public static int CurrentZweifel = 0;
 
+    public static float FullMeter = 1;
+
     public BaseMaze MazeGenerator;
     public CharacterAnimation Character;
 
@@ -33,14 +35,21 @@ public class MazeController : MonoBehaviour {
     //[HideInInspector]
     public MazeData Maze;
 
+    float loseFullPerStep = 0.01f;
+
 
     float lastTime = 0;
+
+    public static MazeController Instance;
+
 
     private void Awake() {
         lastTime = Time.time;
         GenerateMaze();
         GeneratePaths();
         CurrentZweifel = MaxZweifel;
+        Instance = this;
+        loseFullPerStep = 1.5f / MaxRopeLength;
     }
 
 
@@ -52,7 +61,7 @@ public class MazeController : MonoBehaviour {
         this.Maze = MazeGenerator.Maze;
         PlayerPosition = new Vector2Int(Maze.X / 2, Maze.Y / 2);
         if (Character != null) {
-            Character.transform.position = new Vector3(PlayerPosition.x - Maze.X / 2 + 0.5f, 0.5f, PlayerPosition.y - Maze.Y / 2 + 1);
+            Character.transform.position = new Vector3(PlayerPosition.x - Maze.X / 2 + 0.5f, 0.5f, PlayerPosition.y - Maze.Y / 2 + 0.5f);
         }
 
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = true;
@@ -104,13 +113,16 @@ public class MazeController : MonoBehaviour {
             default:
                 break;
         }
-        Character.Go(direction, false, false);
+
+
         if (CurrentRopeLength <= 0 && !goBack) {
-            canWalk= false;
-        }
+            canWalk = false;
+            Character.NoRope();
+        } else {
 
-        if (!canWalk) {
-
+            if (!canWalk) {
+                Character.Go(direction, false, false);
+            }
         }
 
         return canWalk;
@@ -120,10 +132,16 @@ public class MazeController : MonoBehaviour {
         return false;
     }
 
+    Vector2Int lastPosition;
 
     public void Walk(WalkDirection direction) {
         if (!CanWalk(direction)) {
             return;
+        }
+
+        FullMeter -= loseFullPerStep;
+        if (FullMeter<=0) {
+            UI_Logic.instance.OpenLoosingScreen();
         }
 
         lastTime = Time.time;
@@ -162,6 +180,8 @@ public class MazeController : MonoBehaviour {
             DropRope(Maze[PlayerPosition.x, PlayerPosition.y].LastCell, direction);
         } else {
             Maze[PlayerPosition.x, PlayerPosition.y].LastCell = WalkDirection.none;
+            lastPosition = PlayerPosition;
+            canDeleteTempRope = true;
         }
 
 
@@ -172,10 +192,13 @@ public class MazeController : MonoBehaviour {
         Character.Go(direction, true, goBack);
 
 
+
         if (goBack) {
-            PickupRope();
+            //PickupRope();
         } else {
             Maze[PlayerPosition.x, PlayerPosition.y].LastCell = lastDirection;
+            //Drop half rope
+            DropRope(WalkDirection.none, lastDirection, true);
         }
 
 
@@ -191,12 +214,11 @@ public class MazeController : MonoBehaviour {
     }
 
 
-    public void DropRope( WalkDirection lastDirection, WalkDirection walkDirection) {
+    public void DropRope( WalkDirection lastDirection, WalkDirection walkDirection, bool ignoreCount=false) {
 
         int sprite = 0;
         float rotation = 0;
         if (lastDirection == WalkDirection.none) {
-            Debug.Log(walkDirection);
             sprite = 0;
             if (walkDirection == WalkDirection.right) {
                 rotation = 0;
@@ -229,7 +251,10 @@ public class MazeController : MonoBehaviour {
         }
 
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = true;
-        CurrentRopeLength--;
+        if (!ignoreCount) {
+            CurrentRopeLength--;
+            //Debug.Log(CurrentRopeLength);
+        }
         int rnd = Random.Range(0,RopeTypes[sprite].Sprites.Length);
         Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(RopeTypes[sprite].Sprites[rnd], rotation);
 
@@ -239,7 +264,13 @@ public class MazeController : MonoBehaviour {
     public void PickupRope() {
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = false;
         CurrentRopeLength++;
+        //Debug.Log(CurrentRopeLength);
         Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(null);
+
+        //temp half rope
+        if (Maze[PlayerPosition.x, PlayerPosition.y].LastCell!= WalkDirection.none) {
+            DropRope(WalkDirection.none, Maze[PlayerPosition.x, PlayerPosition.y].LastCell, true);
+        }
 
     }
 
@@ -374,8 +405,12 @@ public class MazeController : MonoBehaviour {
         }
         int rnd = Random.Range(0, ZweifelSprites.Length);
 
-        //TODO eating animation
         Character.EatChips();
+
+        FullMeter += 0.5f;
+        if (FullMeter>1) {
+            FullMeter = 1;
+        }
 
         Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetChips(ZweifelSprites[rnd]);
 
@@ -388,7 +423,21 @@ public class MazeController : MonoBehaviour {
     }
 
     public void ExitFound() {
+        UI_Logic.instance.Invoke(nameof(UI_Logic.instance.OpenWinningScreen),1.0f);
+        //UI_Logic.instance.OpenWinningScreen();
         Debug.Log("You win!");
+    }
+
+    static bool canDeleteTempRope = false;
+
+    public static void DeleteTempRope() {
+        if (!canDeleteTempRope) {
+            return;
+        }
+        canDeleteTempRope = false;
+        Instance.Maze[Instance.lastPosition.x, Instance.lastPosition.y].Floor.SetRope(null);
+        Instance.Maze[Instance.lastPosition.x, Instance.lastPosition.y].HasRope = false;
+        Instance.PickupRope();
     }
 
     // Update is called once per frame

@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class TileSpawner : MonoBehaviour {
 
-    public Camera Camera;
+    //public Camera Camera;
     //public BaseGenerator Maze;
 
     public MazeController Controller;
@@ -55,7 +55,7 @@ public class TileSpawner : MonoBehaviour {
         CurrentTiles.SetMazeData(Maze);
 
         SpawnedObjects = new List<GameObject>();
-        Camera.orthographicSize = 0.5f * Mathf.Max(Maze.X, Maze.Y);
+        //Camera.orthographicSize = 0.5f * Mathf.Max(Maze.X, Maze.Y);
 
         Vector3 StartPos = new Vector3(-0.5f*Maze.X+0.5f, 0.5f, -0.5f*Maze.Y+0.5f);
         Vector3 spawnPosition;
@@ -75,6 +75,9 @@ public class TileSpawner : MonoBehaviour {
                     floorTile.transform.parent = this.transform;
                     SpawnedObjects.Add(floorTile.gameObject);
                     Maze[i, j].Floor = floorTile;
+                    if (Maze[i,j].IsExit) {
+                        floorTile.ActivateExit();
+                    }
                 }
             }
         }

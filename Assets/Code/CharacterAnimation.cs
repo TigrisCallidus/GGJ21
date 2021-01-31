@@ -110,10 +110,11 @@ public class CharacterAnimation : MonoBehaviour
                 if (onRopeCollecting && fraction >= 0.5)
                 {
                     //TODO Delete temp rope on current tile
+                    MazeController.DeleteTempRope();
                 }
 
 
-                    if (!onRopeCollecting && fraction >= 0.35)
+                    if (!onRopeCollecting && fraction >= 0.4)
                 {
                     maskHolder.transform.localScale = new Vector3(0.5f, 1f, 1f);
                 }

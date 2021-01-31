@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &87302131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1085817849508822403, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 196932981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9752b3fef4d775e43b12ca7be0fff47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &130953410
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +185,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2398475026800502377}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &196932981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.53729963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8433915
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822402, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085817849508822407, guid: 67d9be0909fe02a49b154c51ab8bb7c0,
+        type: 3}
+      propertyPath: m_Name
+      value: Character
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67d9be0909fe02a49b154c51ab8bb7c0, type: 3}
 --- !u!4 &198570646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
@@ -207,22 +288,13 @@ GameObject:
   m_Component:
   - component: {fileID: 272422590}
   - component: {fileID: 272422589}
-  - component: {fileID: 272422588}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &272422588
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272422587}
-  m_Enabled: 1
+  m_IsActive: 0
 --- !u!20 &272422589
 Camera:
   m_ObjectHideFlags: 0
@@ -597,388 +669,31 @@ MonoBehaviour:
   HideTiles: 0
   AdditionalGaps: 10
   MinimumPlus: 5
-  MazeGenerator: {fileID: 1106729824}
   PlayerPosition: {x: 8, y: 8}
-  MovementTime: 3
+  MovementTime: 1
+  MazeGenerator: {fileID: 1106729824}
+  Character: {fileID: 87302131}
+  RopeTypes:
+  - Sprites:
+    - {fileID: 21300000, guid: 4b9aeb8f367aa4f48b64ca895899d9bc, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 21d85456ae99b2247a567a508756f8c2, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: b3078fb830fe268459fe3c58dab2c777, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: e73981c9042b5284f9e523476154bcf9, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: f307bc94e5a468a4ab9e7745508a6023, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 97e128d363c467d44aa6dd035c73f6d0, type: 3}
+    - {fileID: 21300000, guid: 4d7b00d4fc570eb41974dad7a566c70d, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: c5a78fec81209cc4b9ea7c57daf325e9, type: 3}
   Maze:
     X: 16
     Y: 16
     Columns:
     - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 1
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
       - Number: 0
         LastCell: 0
         HasPlayer: 0
@@ -986,6 +701,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -993,190 +710,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 0
         LastCell: 0
         HasPlayer: 0
@@ -1184,6 +719,26 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1191,6 +746,35 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1198,13 +782,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1212,13 +800,35 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -5
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 5
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1226,70 +836,18 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: 1
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 14
-        IsExit: 1
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1297,41 +855,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -8
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 8
+        Distance: 0
         IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1339,13 +873,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -2
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 2
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1353,13 +882,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1367,27 +891,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1395,14 +900,189 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: 1
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 13
-        IsExit: 1
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1410,13 +1090,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -9
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 9
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1424,13 +1108,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1438,112 +1126,27 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 1
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: -12
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 12
-        IsExit: 1
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
+        Distance: 0
         IsExit: 0
-      - Number: -10
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 10
+        Distance: 0
         IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1551,69 +1154,805 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -2
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 2
+        Distance: 0
         IsExit: 0
-      - Number: -1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 1
+        Distance: 0
         IsExit: 0
-      - Number: -2
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 1
         HasChips: 0
         HasRope: 0
-        Distance: 2
+        Distance: 0
         IsExit: 0
-      - Number: -1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 1
+        Distance: 0
         IsExit: 0
-      - Number: -2
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 2
+        Distance: 0
         IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1621,6 +1960,44 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
       - Number: 1
         LastCell: 0
@@ -1628,21 +2005,9 @@ MonoBehaviour:
         HasChips: 0
         HasRope: 0
         Distance: 0
-        IsExit: 1
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
         IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1650,13 +2015,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -9
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 9
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1664,13 +2033,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -3
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 3
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1678,13 +2051,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 1
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1692,6 +2069,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1699,6 +2078,26 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1706,13 +2105,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -5
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 5
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1720,13 +2123,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1734,28 +2141,36 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: -14
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
+        Distance: 0
         IsExit: 0
-      - Number: -12
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 12
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1763,13 +2178,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -10
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 10
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1777,13 +2196,89 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -4
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 4
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -1791,288 +2286,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -2
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 2
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: -16
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: -15
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 0
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 0
-      - Number: -15
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 0
-      - Number: -16
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
       - Number: 1
         LastCell: 0
@@ -2080,7 +2295,9 @@ MonoBehaviour:
         HasChips: 0
         HasRope: 0
         Distance: 0
-        IsExit: 1
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2088,13 +2305,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -15
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2102,13 +2314,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -17
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 17
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2116,13 +2323,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2130,13 +2341,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -5
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 5
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2144,13 +2359,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2158,6 +2368,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2165,6 +2377,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2172,13 +2386,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2186,28 +2395,489 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 18
+        Distance: 0
         IsExit: 0
-      - Number: -17
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 17
-        IsExit: 0
-      - Number: -16
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2215,13 +2885,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -18
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 18
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2229,13 +2894,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2243,13 +2903,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2257,13 +2912,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2271,27 +2921,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2299,21 +2930,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2321,6 +2939,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2328,6 +2948,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2335,6 +2957,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2342,6 +2966,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2349,6 +2975,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2356,6 +2984,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2363,6 +2993,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2370,6 +3002,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -2377,41 +3011,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
 --- !u!4 &690604322
 Transform:
   m_ObjectHideFlags: 0
@@ -2662,380 +3263,6 @@ MonoBehaviour:
     Y: 16
     Columns:
     - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 1
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
       - Number: 0
         LastCell: 0
         HasPlayer: 0
@@ -3043,6 +3270,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3050,190 +3279,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 0
         LastCell: 0
         HasPlayer: 0
@@ -3241,6 +3288,26 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3248,6 +3315,35 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3255,13 +3351,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3269,13 +3369,35 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -5
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 5
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3283,70 +3405,18 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: 1
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 14
-        IsExit: 1
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3354,41 +3424,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -8
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 8
+        Distance: 0
         IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3396,13 +3442,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -2
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 2
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3410,13 +3451,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3424,27 +3460,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3452,14 +3469,189 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: 1
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 13
-        IsExit: 1
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3467,13 +3659,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -9
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 9
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3481,13 +3677,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3495,112 +3695,27 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 1
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: -12
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 12
-        IsExit: 1
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
+        Distance: 0
         IsExit: 0
-      - Number: -10
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 10
+        Distance: 0
         IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3608,69 +3723,805 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -2
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 2
+        Distance: 0
         IsExit: 0
-      - Number: -1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 1
+        Distance: 0
         IsExit: 0
-      - Number: -2
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 1
         HasChips: 0
         HasRope: 0
-        Distance: 2
+        Distance: 0
         IsExit: 0
-      - Number: -1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 1
+        Distance: 0
         IsExit: 0
-      - Number: -2
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 2
+        Distance: 0
         IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3678,6 +4529,44 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
       - Number: 1
         LastCell: 0
@@ -3685,21 +4574,9 @@ MonoBehaviour:
         HasChips: 0
         HasRope: 0
         Distance: 0
-        IsExit: 1
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
         IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3707,13 +4584,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -9
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 9
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3721,13 +4602,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -3
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 3
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3735,13 +4620,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -1
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 1
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3749,6 +4638,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3756,6 +4647,26 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3763,13 +4674,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -5
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 5
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3777,13 +4692,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3791,28 +4710,36 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
-      - Number: -14
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 14
-        IsExit: 1
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
+        Distance: 0
         IsExit: 0
-      - Number: -12
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 12
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3820,13 +4747,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -10
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 10
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3834,13 +4765,89 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -4
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 4
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -3848,288 +4855,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -2
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 2
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -3
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 3
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -9
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 9
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-    - Elements:
-      - Number: -16
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 1
-      - Number: -15
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 0
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 0
-      - Number: -15
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 0
-      - Number: -16
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -4
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 4
-        IsExit: 0
-      - Number: -5
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 5
-        IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: -10
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 10
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
       - Number: 1
         LastCell: 0
@@ -4137,7 +4864,9 @@ MonoBehaviour:
         HasChips: 0
         HasRope: 0
         Distance: 0
-        IsExit: 1
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4145,13 +4874,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -15
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 15
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4159,13 +4883,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -17
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 17
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4173,13 +4892,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 7
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4187,13 +4910,17 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -5
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 5
+        Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4201,13 +4928,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -7
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 7
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4215,6 +4937,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4222,6 +4946,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4229,13 +4955,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -11
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 11
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4243,28 +4964,489 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+    - Elements:
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
     - Elements:
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
         HasRope: 0
-        Distance: 18
+        Distance: 0
         IsExit: 0
-      - Number: -17
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 17
-        IsExit: 0
-      - Number: -16
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 16
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4272,13 +5454,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -18
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 18
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4286,13 +5463,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4300,13 +5472,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -6
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 6
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4314,13 +5481,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -8
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 8
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4328,27 +5490,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: -14
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 14
-        IsExit: 0
-      - Number: -13
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 13
-        IsExit: 0
-      - Number: -12
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 12
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4356,21 +5499,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-    - Elements:
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 1
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4378,6 +5508,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4385,6 +5517,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4392,6 +5526,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4399,6 +5535,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4406,6 +5544,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4413,6 +5553,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4420,6 +5562,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4427,6 +5571,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
       - Number: 1
         LastCell: 0
         HasPlayer: 0
@@ -4434,41 +5580,8 @@ MonoBehaviour:
         HasRope: 0
         Distance: 0
         IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        HasRope: 0
-        Distance: 0
-        IsExit: 0
+        Floor: {fileID: 0}
+        Wall: {fileID: 0}
   HideTiles: 0
   WaitTime: 0.5
   newX: 16

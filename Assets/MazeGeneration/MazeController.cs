@@ -68,9 +68,7 @@ public class MazeController : MonoBehaviour {
         bool canWalk = false;
         bool goBack = direction == Maze[PlayerPosition.x, PlayerPosition.y].LastCell;
 
-        if (CurrentRopeLength <= 0 && !goBack) {
-            return false;
-        }
+
 
         if (goBack) {
             return true;
@@ -106,6 +104,15 @@ public class MazeController : MonoBehaviour {
             default:
                 break;
         }
+        Character.Go(direction, false, false);
+        if (CurrentRopeLength <= 0 && !goBack) {
+            canWalk= false;
+        }
+
+        if (!canWalk) {
+
+        }
+
         return canWalk;
     }
 
@@ -152,7 +159,7 @@ public class MazeController : MonoBehaviour {
         //Debug.Log(goBack);
 
         if (!goBack) {
-            DropRope();
+            DropRope(Maze[PlayerPosition.x, PlayerPosition.y].LastCell, direction);
         } else {
             Maze[PlayerPosition.x, PlayerPosition.y].LastCell = WalkDirection.none;
         }
@@ -160,7 +167,9 @@ public class MazeController : MonoBehaviour {
 
 
         //Do walk
+
         DoMovement(newPosition);
+        Character.Go(direction, true, goBack);
 
 
         if (goBack) {
@@ -182,10 +191,49 @@ public class MazeController : MonoBehaviour {
     }
 
 
-    public void DropRope() {
+    public void DropRope( WalkDirection lastDirection, WalkDirection walkDirection) {
+
+        int sprite = 0;
+        float rotation = 0;
+        if (lastDirection == WalkDirection.none) {
+            Debug.Log(walkDirection);
+            sprite = 0;
+            if (walkDirection == WalkDirection.right) {
+                rotation = 0;
+            } else if (walkDirection == WalkDirection.up) {
+                rotation = 90;
+            } else if (walkDirection == WalkDirection.down) {
+                rotation = 270;
+            } else if (walkDirection == WalkDirection.left) {
+                rotation = 180;
+            }
+        } else if ((lastDirection== WalkDirection.left || lastDirection== WalkDirection.right)
+            && (walkDirection == WalkDirection.left || walkDirection == WalkDirection.right))
+            {
+            sprite = 1;
+        } else if ((lastDirection == WalkDirection.up || lastDirection == WalkDirection.down)
+            && (walkDirection == WalkDirection.up || walkDirection == WalkDirection.down)) {
+            sprite = 6;
+        } else if ((lastDirection == WalkDirection.left && walkDirection == WalkDirection.up)
+             || (lastDirection == WalkDirection.up && walkDirection == WalkDirection.left)) {
+            sprite = 2;
+        } else if ((lastDirection == WalkDirection.right && walkDirection == WalkDirection.up)
+              || (lastDirection == WalkDirection.up && walkDirection == WalkDirection.right)) {
+            sprite = 3;
+        } else if ((lastDirection == WalkDirection.left && walkDirection == WalkDirection.down)
+              || (lastDirection == WalkDirection.down && walkDirection == WalkDirection.left)) {
+            sprite = 5;
+        } else if ((lastDirection == WalkDirection.right && walkDirection == WalkDirection.down)
+               || (lastDirection == WalkDirection.down && walkDirection == WalkDirection.right)) {
+            sprite = 4;
+        }
+
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = true;
         CurrentRopeLength--;
-        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(RopeTypes[1].Sprites[0]);
+        int rnd = Random.Range(0,RopeTypes[sprite].Sprites.Length);
+        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(RopeTypes[sprite].Sprites[rnd], rotation);
+
+
     }
 
     public void PickupRope() {
@@ -199,11 +247,11 @@ public class MazeController : MonoBehaviour {
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = false;
         PlayerPosition = newPosition;
         //TODO link real movement
-
+        /*
         if (Character != null) {
             Character.transform.position = new Vector3(PlayerPosition.x - Maze.X / 2 + 0.5f, 0.5f, PlayerPosition.y - Maze.Y / 2 + 1);
         }
-
+        */
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = true;
 
     }
@@ -327,6 +375,8 @@ public class MazeController : MonoBehaviour {
         int rnd = Random.Range(0, ZweifelSprites.Length);
 
         //TODO eating animation
+        Character.EatChips();
+
         Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetChips(ZweifelSprites[rnd]);
 
 

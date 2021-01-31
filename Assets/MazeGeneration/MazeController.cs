@@ -10,6 +10,8 @@ public class MazeController : MonoBehaviour {
 
     public int MinimumPlus = 5;
 
+    public int MinRange = 5;
+
 
     public Vector2Int PlayerPosition;
 
@@ -45,8 +47,13 @@ public class MazeController : MonoBehaviour {
 
     private void Awake() {
         lastTime = Time.time;
-        GenerateMaze();
-        GeneratePaths();
+        bool foundSolution = false;
+        while (!foundSolution) {
+            GenerateMaze();
+            foundSolution=GeneratePaths();
+        }
+
+
         CurrentZweifel = MaxZweifel;
         Instance = this;
         loseFullPerStep = 1.5f / MaxRopeLength;
@@ -287,7 +294,10 @@ public class MazeController : MonoBehaviour {
 
     }
 
-    public void GeneratePaths() {
+    public bool GeneratePaths() {
+
+        OpenMaze();
+
         Queue<Vector2Int> positions = new Queue<Vector2Int>();
 
         positions.Enqueue(PlayerPosition);
@@ -300,7 +310,7 @@ public class MazeController : MonoBehaviour {
                 break;
             }
         }
-        CloseMaze();
+        return CloseMaze();
     }
 
     void AddNeighbours(Queue<Vector2Int> queue, Vector2Int pos) {
@@ -347,7 +357,18 @@ public class MazeController : MonoBehaviour {
 
     }
 
-    public void CloseMaze() {
+    public void OpenMaze() {
+
+        for (int i = 0; i < Maze.X; i++) {
+            Maze[i, Maze.Y - 1].Number = 0;
+        }
+
+        for (int i = 0; i < Maze.Y; i++) {
+            Maze[Maze.X - 1, i].Number = 0;
+        }
+    }
+
+    public bool CloseMaze() {
 
         int min = 100000;
 
@@ -372,28 +393,78 @@ public class MazeController : MonoBehaviour {
             }
         }
 
-        int maxDistance = min + MinimumPlus;
 
 
         for (int i = 0; i < Maze.X; i++) {
-            if (Maze[i, 0].Distance > maxDistance) {
-                Maze[i, 0].Number = 1;
+            if (Maze[i, Maze.Y - 2].IsWall) {
+                Maze[i, Maze.Y - 1].Number = 1;
             } else {
-                Maze[i, 0].IsExit = true;
+                if (Maze[i, Maze.Y - 1].Distance < min && Maze[i, Maze.Y - 1].Distance > 0) {
+                    min = Maze[i, Maze.Y - 1].Distance;
+                }
             }
         }
 
         for (int i = 0; i < Maze.Y; i++) {
-            if (Maze[0, i].Distance > maxDistance) {
+            if (Maze[Maze.X - 2, i].IsWall) {
+                Maze[Maze.X - 1, i].Number = 1;
+
+            } else {
+                if (Maze[Maze.X - 1, i].Distance < min && Maze[Maze.X - 1, i].Distance > 0) {
+                    min = Maze[Maze.X - 1, i].Distance;
+                }
+            }
+        }
+
+
+        int maxDistance = min + MinimumPlus + MinRange;
+
+        min = min + MinimumPlus;
+
+        bool found = false;
+
+        for (int i = 0; i < Maze.X; i++) {
+            if (Maze[i, 0].Distance > maxDistance || Maze[i, 0].Distance < min) {
+                Maze[i, 0].Number = 1;
+            } else {
+                Maze[i, 0].IsExit = true;
+                found = true;
+            }
+        }
+
+        for (int i = 0; i < Maze.Y; i++) {
+            if (Maze[0, i].Distance > maxDistance || Maze[0, i].Distance < min) {
                 Maze[0, i].Number = 1;
 
             } else {
                 Maze[0, i].IsExit = true;
+                found = true;
+            }
+        }
+
+        for (int i = 0; i < Maze.X; i++) {
+            if (Maze[i, Maze.Y - 1].Distance > maxDistance || Maze[i, Maze.Y - 1].Distance < min) {
+                Maze[i, Maze.Y - 1].Number = 1;
+            } else {
+                Maze[i, Maze.Y - 1].IsExit = true;
+                found = true;
+            }
+        }
+
+        for (int i = 0; i < Maze.Y; i++) {
+            if (Maze[Maze.X - 1, i].Distance > maxDistance || Maze[Maze.X - 1, i].Distance < min) {
+                Maze[Maze.X - 1, i].Number = 1;
+
+            } else {
+                Maze[Maze.X - 1, i].IsExit = true;
+                found = true;
             }
         }
 
         MaxRopeLength = maxDistance;
         CurrentRopeLength = maxDistance;
+
+        return found;
     }
 
     public void DropZweifel() {
@@ -448,23 +519,23 @@ public class MazeController : MonoBehaviour {
             return;
         }
 
-        if (Input.GetKeyDown( KeyCode.W) || Input.GetKey ( KeyCode.UpArrow)) {
+        if (Input.GetKey( KeyCode.W) || Input.GetKey( KeyCode.UpArrow)) {
             Walk(WalkDirection.up);
         }
 
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
             Walk(WalkDirection.down);
         }
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
             Walk(WalkDirection.right);
         }
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
             Walk(WalkDirection.left);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.E)) {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E)) {
             DropZweifel();
         }
     }

@@ -46,6 +46,10 @@ public class MazeController : MonoBehaviour {
 
 
     private void Awake() {
+
+        Debug.Log("Awake");
+
+
         lastTime = Time.time;
         bool foundSolution = false;
         while (!foundSolution) {
@@ -53,6 +57,7 @@ public class MazeController : MonoBehaviour {
             foundSolution=GeneratePaths();
         }
 
+        FullMeter = 1;
 
         CurrentZweifel = MaxZweifel;
         Instance = this;
@@ -227,6 +232,9 @@ public class MazeController : MonoBehaviour {
         float rotation = 0;
         if (lastDirection == WalkDirection.none) {
             sprite = 0;
+            if (ignoreCount) {
+                sprite = 7;
+            }
             if (walkDirection == WalkDirection.right) {
                 rotation = 0;
             } else if (walkDirection == WalkDirection.up) {

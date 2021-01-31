@@ -1082,7 +1082,7 @@ MonoBehaviour:
   Character: {fileID: 87302131}
   RopeTypes:
   - Sprites:
-    - {fileID: 21300000, guid: 4b9aeb8f367aa4f48b64ca895899d9bc, type: 3}
+    - {fileID: 21300000, guid: 628d5d8434ad63742863a544224a235e, type: 3}
   - Sprites:
     - {fileID: 21300000, guid: 21d85456ae99b2247a567a508756f8c2, type: 3}
   - Sprites:
@@ -1096,6 +1096,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4d7b00d4fc570eb41974dad7a566c70d, type: 3}
   - Sprites:
     - {fileID: 21300000, guid: c5a78fec81209cc4b9ea7c57daf325e9, type: 3}
+  - Sprites:
+    - {fileID: 21300000, guid: 4b9aeb8f367aa4f48b64ca895899d9bc, type: 3}
   ZweifelSprites:
   - {fileID: 21300000, guid: 6afd73d12e9d3b742b361d85cae1324a, type: 3}
   Maze:

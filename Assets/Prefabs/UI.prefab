@@ -3267,6 +3267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3295059050119547022}
+  - component: {fileID: 697311083}
   m_Layer: 5
   m_Name: Magen
   m_TagString: Untagged
@@ -3295,6 +3296,25 @@ RectTransform:
   m_AnchoredPosition: {x: -39, y: 166}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
+--- !u!95 &697311083
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3295059050119547023}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 56cdeeb9e2b15cb468c95b63785dcb5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3295059050198476086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3563,7 @@ GameObject:
   - component: {fileID: 3295059050499309205}
   - component: {fileID: 3295059050499309206}
   - component: {fileID: 3295059050499309202}
+  - component: {fileID: 288781048}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -3651,14 +3672,112 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chipsBarRecTrans: {fileID: 3295059050620203202}
   ropeLength: {fileID: 3295059050081095925}
-  hungerBarRecTrans: {fileID: 0}
-  magen: {fileID: 0}
-  hunger1: {fileID: 0}
-  hunger2: {fileID: 0}
-  hunger3: {fileID: 0}
+  ropeAnim: {fileID: 1597837258}
+  hungerBarRecTrans: {fileID: 3295059051861734900}
+  magen: {fileID: 697311083}
+  hunger1: {fileID: 8300000, guid: 299795a9679ed094d87d1dd49da33151, type: 3}
+  hunger2: {fileID: 8300000, guid: e7100db8f9b77494ba87304a82711afc, type: 3}
+  hunger3: {fileID: 8300000, guid: 856916784c1b2494687f4e604b8c7326, type: 3}
   inGameMenu: {fileID: 1316189958862909611}
   winMenu: {fileID: 4901325887478333742}
   loseMenu: {fileID: 92153515000668117}
+--- !u!82 &288781048
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3295059050499309207}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 2385672355473254317, guid: e5f51aa3a5d657846a1996b05a0569d8,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3295059050620203203
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,6 +4844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4962415478431080575}
+  - component: {fileID: 1597837258}
   m_Layer: 5
   m_Name: Schnur
   m_TagString: Untagged
@@ -4752,6 +4872,25 @@ RectTransform:
   m_AnchoredPosition: {x: -780, y: 242}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1597837258
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578114499013931248}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfa2d99101da56c41b29b42cfef6b10b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7745244467929433326
 GameObject:
   m_ObjectHideFlags: 0

@@ -95,7 +95,12 @@ public class CharacterAnimation : MonoBehaviour
         }
         else
         {
-            soundSource.PlayOneShot(walkNo);
+
+            if (!soundSource.isPlaying)
+            {
+                soundSource.clip = walkNo;
+                soundSource.Play();
+            }
         }
     }
 
@@ -107,14 +112,14 @@ public class CharacterAnimation : MonoBehaviour
             {
                 fraction += Time.deltaTime * walkingSpeed;
                 transform.position = Vector3.Lerp(startPos, desPos, fraction);
-                if (onRopeCollecting && fraction >= 0.5)
+                if (onRopeCollecting && fraction >= 0.8)
                 {
-                    //TODO Delete temp rope on current tile
+
                     MazeController.DeleteTempRope();
                 }
 
 
-                    if (!onRopeCollecting && fraction >= 0.4)
+                    if (!onRopeCollecting && fraction >= 0.5)
                 {
                     maskHolder.transform.localScale = new Vector3(0.5f, 1f, 1f);
                 }
@@ -145,7 +150,11 @@ public class CharacterAnimation : MonoBehaviour
 
     public void NoRope()
     {
-        soundSource.PlayOneShot(noRope);
+        if (!soundSource.isPlaying)
+        {
+            soundSource.clip = noRope;
+            soundSource.Play();
+        }
     }
 
 

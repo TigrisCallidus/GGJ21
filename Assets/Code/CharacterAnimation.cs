@@ -8,6 +8,14 @@ public class CharacterAnimation : MonoBehaviour
     public float walkingSpeed = 0.5f;
     public GameObject wolleObject;
 
+    public AudioSource soundSource;
+    public AudioSource walkingSoundSource;
+    public AudioClip walkNo;
+    public AudioClip eatingChips;
+
+
+
+
     Animator anim;
     float fraction = 0f;
     bool onWalk = false;
@@ -77,6 +85,11 @@ public class CharacterAnimation : MonoBehaviour
             fraction = 0f;
             onWalk = true;
             anim.SetBool("Idle", false);
+            walkingSoundSource.Play();
+        }
+        else
+        {
+            soundSource.PlayOneShot(walkNo);
         }
     }
 
@@ -102,6 +115,7 @@ public class CharacterAnimation : MonoBehaviour
             }
             else
             {
+                walkingSoundSource.Stop();
                 anim.SetBool("Idle", true);
                 onWalk = false;
                 maskHolder.SetActive(false);
@@ -119,6 +133,7 @@ public class CharacterAnimation : MonoBehaviour
     public void EatChips()
     {
         anim.SetTrigger("Eat");
+        soundSource.PlayOneShot(eatingChips);
     }
 
 

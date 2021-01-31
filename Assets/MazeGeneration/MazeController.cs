@@ -10,12 +10,11 @@ public class MazeController : MonoBehaviour {
 
     public int MinimumPlus = 5;
 
-    public BaseMaze MazeGenerator;
 
     public Vector2Int PlayerPosition;
 
 
-    public float MovementTime = 3f;
+    public float AnimationTime = 1f;
 
 
     public static int CurrentRopeLength = 0;
@@ -25,9 +24,11 @@ public class MazeController : MonoBehaviour {
     public static int MaxZweifel = 10;
     public static int CurrentZweifel = 0;
 
+    public BaseMaze MazeGenerator;
+    public CharacterAnimation Character;
 
     public SpriteList[] RopeTypes;
-
+    public Sprite[] ZweifelSprites;
 
     //[HideInInspector]
     public MazeData Maze;
@@ -39,6 +40,7 @@ public class MazeController : MonoBehaviour {
         lastTime = Time.time;
         GenerateMaze();
         GeneratePaths();
+        CurrentZweifel = MaxZweifel;
     }
 
 
@@ -49,6 +51,9 @@ public class MazeController : MonoBehaviour {
 
         this.Maze = MazeGenerator.Maze;
         PlayerPosition = new Vector2Int(Maze.X / 2, Maze.Y / 2);
+        if (Character != null) {
+            Character.transform.position = new Vector3(PlayerPosition.x - Maze.X / 2 + 0.5f, 0.5f, PlayerPosition.y - Maze.Y / 2 + 1);
+        }
 
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = true;
     }
@@ -56,14 +61,14 @@ public class MazeController : MonoBehaviour {
 
     public bool CanWalk(WalkDirection direction) {
 
-        if (Application.isPlaying && Time.time-lastTime<MovementTime) {
+        if (Application.isPlaying && Time.time - lastTime < AnimationTime) {
             return false;
         }
 
         bool canWalk = false;
         bool goBack = direction == Maze[PlayerPosition.x, PlayerPosition.y].LastCell;
 
-        if (CurrentRopeLength<=0 &&!goBack) {
+        if (CurrentRopeLength <= 0 && !goBack) {
             return false;
         }
 
@@ -100,7 +105,7 @@ public class MazeController : MonoBehaviour {
                 break;
             default:
                 break;
-        }       
+        }
         return canWalk;
     }
 
@@ -163,6 +168,12 @@ public class MazeController : MonoBehaviour {
         } else {
             Maze[PlayerPosition.x, PlayerPosition.y].LastCell = lastDirection;
         }
+
+
+        if (Maze[PlayerPosition.x, PlayerPosition.y].IsExit) {
+            ExitFound();
+        }
+        
     }
 
 
@@ -187,6 +198,12 @@ public class MazeController : MonoBehaviour {
     public void DoMovement(Vector2Int newPosition) {
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = false;
         PlayerPosition = newPosition;
+        //TODO link real movement
+
+        if (Character != null) {
+            Character.transform.position = new Vector3(PlayerPosition.x - Maze.X / 2 + 0.5f, 0.5f, PlayerPosition.y - Maze.Y / 2 + 1);
+        }
+
         Maze[PlayerPosition.x, PlayerPosition.y].HasPlayer = true;
 
     }
@@ -196,11 +213,11 @@ public class MazeController : MonoBehaviour {
 
         positions.Enqueue(PlayerPosition);
         int count = 0;
-        while (positions.Count>0) {
+        while (positions.Count > 0) {
             Vector2Int pos = positions.Dequeue();
             AddNeighbours(positions, pos);
             count++;
-            if (count>10000) {
+            if (count > 10000) {
                 break;
             }
         }
@@ -213,9 +230,9 @@ public class MazeController : MonoBehaviour {
 
         int newDistance = Maze[newPos.x, newPos.y].Distance + 1;
 
-        if (pos.x>0) {
+        if (pos.x > 0) {
             newPos = pos - new Vector2Int(1, 0);
-            if (!Maze[newPos.x,newPos.y].IsWall && Maze[newPos.x, newPos.y].Distance==0) {
+            if (!Maze[newPos.x, newPos.y].IsWall && Maze[newPos.x, newPos.y].Distance == 0) {
                 queue.Enqueue(newPos);
                 Maze[newPos.x, newPos.y].Distance = newDistance;
                 Maze[newPos.x, newPos.y].Number = -newDistance;
@@ -231,7 +248,7 @@ public class MazeController : MonoBehaviour {
             }
         }
 
-        if (pos.x < Maze.X-1) {
+        if (pos.x < Maze.X - 1) {
             newPos = pos + new Vector2Int(1, 0);
             if (!Maze[newPos.x, newPos.y].IsWall && Maze[newPos.x, newPos.y].Distance == 0) {
                 queue.Enqueue(newPos);
@@ -256,10 +273,10 @@ public class MazeController : MonoBehaviour {
         int min = 100000;
 
         for (int i = 0; i < Maze.X; i++) {
-            if (Maze[i,1].IsWall) {
+            if (Maze[i, 1].IsWall) {
                 Maze[i, 0].Number = 1;
             } else {
-                if (Maze[i, 0].Distance < min && Maze[i, 0].Distance>0) {
+                if (Maze[i, 0].Distance < min && Maze[i, 0].Distance > 0) {
                     min = Maze[i, 0].Distance;
                 }
             }
@@ -270,7 +287,7 @@ public class MazeController : MonoBehaviour {
                 Maze[0, i].Number = 1;
 
             } else {
-                if (Maze[0, i].Distance < min && Maze[0, i].Distance>0) {
+                if (Maze[0, i].Distance < min && Maze[0, i].Distance > 0) {
                     min = Maze[0, i].Distance;
                 }
             }
@@ -280,11 +297,11 @@ public class MazeController : MonoBehaviour {
 
 
         for (int i = 0; i < Maze.X; i++) {
-            if (Maze[i, 0].Distance>maxDistance) {
+            if (Maze[i, 0].Distance > maxDistance) {
                 Maze[i, 0].Number = 1;
             } else {
                 Maze[i, 0].IsExit = true;
-            } 
+            }
         }
 
         for (int i = 0; i < Maze.Y; i++) {
@@ -300,8 +317,56 @@ public class MazeController : MonoBehaviour {
         CurrentRopeLength = maxDistance;
     }
 
+    public void DropZweifel() {
+        if (Application.isPlaying && Time.time - lastTime < AnimationTime) {
+            return;
+        }
+        if (CurrentZweifel<=0) {
+            return;
+        }
+        int rnd = Random.Range(0, ZweifelSprites.Length);
+
+        //TODO eating animation
+        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetChips(ZweifelSprites[rnd]);
+
+
+        Maze[PlayerPosition.x, PlayerPosition.y].HasChips = true;
+        CurrentZweifel--;
+
+        lastTime = Time.time;
+        
+    }
+
+    public void ExitFound() {
+        Debug.Log("You win!");
+    }
+
     // Update is called once per frame
     void Update() {
 
+
+        if (Time.timeScale<=0.5f) {
+            return;
+        }
+
+        if (Input.GetKeyDown( KeyCode.W) || Input.GetKey ( KeyCode.UpArrow)) {
+            Walk(WalkDirection.up);
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
+            Walk(WalkDirection.down);
+        }
+
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+            Walk(WalkDirection.right);
+        }
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+            Walk(WalkDirection.left);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.E)) {
+            DropZweifel();
+        }
     }
 }

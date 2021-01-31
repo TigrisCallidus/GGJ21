@@ -110,6 +110,9 @@ public class CustomMazeControllerEditor : Editor {
         if (GUILayout.Button("Walk left")) {
             targetController.Walk(WalkDirection.left);
         }
+        if (GUILayout.Button("Drop Chips")) {
+            targetController.DropZweifel();
+        }
     }
 
 

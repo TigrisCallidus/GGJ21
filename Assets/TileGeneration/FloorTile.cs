@@ -23,7 +23,7 @@ public class FloorTile : MonoBehaviour
         }
     }
 
-    public void SetCoockie(Sprite sprite) {
+    public void SetChips(Sprite sprite) {
         CoockieOverlay.sprite = sprite;
         if (sprite == null) {
             CoockieOverlay.gameObject.SetActive(false);

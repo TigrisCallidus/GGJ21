@@ -15,14 +15,18 @@ public class MazeController : MonoBehaviour {
     public Vector2Int PlayerPosition;
 
 
-
-
     public float MovementTime = 3f;
 
 
     public static int CurrentRopeLength = 0;
 
     public static int MaxRopeLength = 100;
+
+    public static int MaxZweifel = 10;
+    public static int CurrentZweifel = 0;
+
+
+    public SpriteList[] RopeTypes;
 
 
     //[HideInInspector]
@@ -33,6 +37,8 @@ public class MazeController : MonoBehaviour {
 
     private void Awake() {
         lastTime = Time.time;
+        GenerateMaze();
+        GeneratePaths();
     }
 
 
@@ -168,11 +174,14 @@ public class MazeController : MonoBehaviour {
     public void DropRope() {
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = true;
         CurrentRopeLength--;
+        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(RopeTypes[1].Sprites[0]);
     }
 
     public void PickupRope() {
         Maze[PlayerPosition.x, PlayerPosition.y].HasRope = false;
         CurrentRopeLength++;
+        Maze[PlayerPosition.x, PlayerPosition.y].Floor?.SetRope(null);
+
     }
 
     public void DoMovement(Vector2Int newPosition) {
@@ -288,6 +297,7 @@ public class MazeController : MonoBehaviour {
         }
 
         MaxRopeLength = maxDistance;
+        CurrentRopeLength = maxDistance;
     }
 
     // Update is called once per frame

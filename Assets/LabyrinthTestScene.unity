@@ -120,6 +120,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &130953410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130953411}
+  m_Layer: 0
+  m_Name: Prefabs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130953411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130953410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 524074170}
+  - {fileID: 266435896}
+  - {fileID: 891535453}
+  - {fileID: 1593152636}
+  - {fileID: 1143493192}
+  - {fileID: 235883720}
+  - {fileID: 1546807149}
+  - {fileID: 1394297550}
+  - {fileID: 1056060607}
+  - {fileID: 919674426}
+  - {fileID: 182103317}
+  - {fileID: 198570646}
+  - {fileID: 229207910}
+  - {fileID: 1198467074}
+  - {fileID: 1431551765}
+  - {fileID: 2047297823}
+  - {fileID: 2587238836660288772}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &182103317 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2398475026800502377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &198570646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+    type: 3}
+  m_PrefabInstance: {fileID: 6248781809056969731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &229207910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+    type: 3}
+  m_PrefabInstance: {fileID: 271166388574883655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &235883720 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2880408763136024486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &266435896 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+    type: 3}
+  m_PrefabInstance: {fileID: 4195523961609331926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &272422587
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +280,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &314005869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314005870}
+  - component: {fileID: 314005871}
+  m_Layer: 0
+  m_Name: Tile (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &314005870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314005869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &314005871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314005869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 3
+  TilePrefabs:
+  - {fileID: 924855807886326769, guid: 05327489e4a44004990458010dfe117d, type: 3}
 --- !u!1 &418885765
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +418,2163 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &524074170 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+    type: 3}
+  m_PrefabInstance: {fileID: 8068671220593679551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &603350240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603350241}
+  - component: {fileID: 603350242}
+  m_Layer: 0
+  m_Name: Tile (0)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603350241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603350240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603350242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603350240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 0
+  TilePrefabs:
+  - {fileID: 6647535314023989062, guid: c441ed998c22a8a479e121709f784029, type: 3}
+--- !u!1 &641490944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641490945}
+  - component: {fileID: 641490946}
+  m_Layer: 0
+  m_Name: Tile (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641490945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641490944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &641490946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641490944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 4
+  TilePrefabs:
+  - {fileID: 3805364511508821892, guid: 4809b4c6015f0dd4aa4450a16546db2e, type: 3}
+--- !u!1 &652944980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652944981}
+  - component: {fileID: 652944982}
+  m_Layer: 0
+  m_Name: Tile (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &652944981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652944980}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652944982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652944980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 5
+  TilePrefabs:
+  - {fileID: 7627888054206127055, guid: 7dcc22169ec607f42b65e30a0a041b78, type: 3}
+--- !u!1 &690604320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690604322}
+  - component: {fileID: 690604321}
+  m_Layer: 0
+  m_Name: MazeController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &690604321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690604320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8e4cc68f4abcb44a3df53f219fc16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HideTiles: 0
+  AdditionalGaps: 10
+  MinimumPlus: 5
+  MazeGenerator: {fileID: 1106729824}
+  PlayerPosition: {x: 8, y: 8}
+  MovementTime: 3
+  Maze:
+    X: 16
+    Y: 16
+    Columns:
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 1
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 1
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 1
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -16
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
+      - Number: -15
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 0
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 0
+      - Number: -15
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 0
+      - Number: -16
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -15
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -17
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 17
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 18
+        IsExit: 0
+      - Number: -17
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 17
+        IsExit: 0
+      - Number: -16
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -18
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 18
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 0
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+--- !u!4 &690604322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690604320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &692514975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692514976}
+  - component: {fileID: 692514977}
+  m_Layer: 0
+  m_Name: SimpleClassification
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692514976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692514975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692514977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692514975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cfafd58fa4f0a64ca02668496393b70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &742867049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742867050}
+  - component: {fileID: 742867051}
+  m_Layer: 0
+  m_Name: Tile (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742867050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742867049}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742867051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742867049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 1
+  TilePrefabs:
+  - {fileID: 9002313609821897247, guid: 8af6d6c160ed40f4284bb7cf1adeb878, type: 3}
+--- !u!1 &803869343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803869344}
+  - component: {fileID: 803869345}
+  m_Layer: 0
+  m_Name: Tile (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &803869344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803869343}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803869345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803869343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 6
+  TilePrefabs:
+  - {fileID: 6912540185311727557, guid: 56363f3cfdb5b5c45832cb143687b7ec, type: 3}
+--- !u!4 &891535453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+    type: 3}
+  m_PrefabInstance: {fileID: 6113788073732417010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &919674426 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+    type: 3}
+  m_PrefabInstance: {fileID: 4948405493385298082}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1046011272
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,7 +2591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1046011273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +2622,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1056060607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+    type: 3}
+  m_PrefabInstance: {fileID: 5271284318131814543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106729823
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,1011 +2658,1825 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Maze:
-    X: 14
-    Y: 14
+    X: 16
+    Y: 16
     Columns:
     - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
+      - Number: -14
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 1
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 1
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        IsExit: 1
     - Elements:
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
+        IsExit: 0
+      - Number: -13
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
+        IsExit: 0
+      - Number: -13
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
     - Elements:
-      - Number: 0
+      - Number: -14
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
+        IsExit: 0
+      - Number: -12
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-      - Number: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: -11
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-      - Number: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -10
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
+        IsExit: 0
+      - Number: -12
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-    - Elements:
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        IsExit: 0
     - Elements:
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
+        IsExit: 0
+      - Number: -11
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 0
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-    - Elements:
-      - Number: 0
+        IsExit: 0
+      - Number: -11
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 0
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
-      - Number: 1
-        LastCell: 0
-        HasPlayer: 0
-        HasChips: 0
-        Distance: 0
+        IsExit: 0
     - Elements:
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
-        Distance: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+    - Elements:
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 1
+      - Number: 0
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
       - Number: 1
         LastCell: 0
         HasPlayer: 0
         HasChips: 0
+        HasRope: 0
         Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 1
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 1
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 1
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 1
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -2
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 2
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -3
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 3
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -9
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 9
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: -16
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 1
+      - Number: -15
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 0
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 0
+      - Number: -15
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 0
+      - Number: -16
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -4
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 4
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -10
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 10
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -15
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 15
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -17
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 17
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -5
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 5
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -7
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 7
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -11
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 11
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 18
+        IsExit: 0
+      - Number: -17
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 17
+        IsExit: 0
+      - Number: -16
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 16
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -18
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 18
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -6
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 6
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -8
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 8
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: -14
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 14
+        IsExit: 0
+      - Number: -13
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 13
+        IsExit: 0
+      - Number: -12
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 12
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+    - Elements:
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 1
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
+      - Number: 1
+        LastCell: 0
+        HasPlayer: 0
+        HasChips: 0
+        HasRope: 0
+        Distance: 0
+        IsExit: 0
   HideTiles: 0
   WaitTime: 0.5
-  newX: 14
-  newY: 14
+  newX: 16
+  newY: 16
   Algorithm: 2
   placementThreshold: 0.1
   Advanced: 1
-  AdditionalGaps: 0
+  AdditionalGaps: 10
   GapType: 0
   FileName: 
 --- !u!4 &1106729825
@@ -1392,3 +4493,1918 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1143493192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2281543456623848311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1198467074 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8477013908320231350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1205242182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1205242184}
+  - component: {fileID: 1205242183}
+  m_Layer: 0
+  m_Name: Tile (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1205242183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205242182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 15
+  TilePrefabs:
+  - {fileID: 8601615822004055030, guid: 6c53004a52b0db64d9c8c8373d36e879, type: 3}
+--- !u!4 &1205242184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205242182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1225944545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225944546}
+  - component: {fileID: 1225944547}
+  m_Layer: 0
+  m_Name: Tile (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225944546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225944545}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225944547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225944545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 10
+  TilePrefabs:
+  - {fileID: 3646775754805011917, guid: 828c14f19be28374fb0a914b21466182, type: 3}
+--- !u!1 &1307086038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1307086039}
+  - component: {fileID: 1307086040}
+  m_Layer: 0
+  m_Name: Tile (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1307086039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307086038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307086040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307086038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 7
+  TilePrefabs:
+  - {fileID: 781530278605993518, guid: 41367ed4ce684f34f83fdd325a2c8976, type: 3}
+--- !u!1 &1341468934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341468935}
+  - component: {fileID: 1341468936}
+  m_Layer: 0
+  m_Name: Tile (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341468935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341468934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341468936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341468934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 14
+  TilePrefabs:
+  - {fileID: 7101184726944195774, guid: e6793a4f68d1b6c41aa61c83eb25a64b, type: 3}
+--- !u!4 &1394297550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 5753060057792710343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1431551765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5027575636837881908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1508457314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1508457315}
+  - component: {fileID: 1508457316}
+  m_Layer: 0
+  m_Name: Tile (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1508457315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508457314}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1508457316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508457314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 8
+  TilePrefabs:
+  - {fileID: 2571008911488473730, guid: 8a047a94e400050418e469dcce0c4974, type: 3}
+--- !u!4 &1546807149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+    type: 3}
+  m_PrefabInstance: {fileID: 3720861004509417874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1593152636 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+    type: 3}
+  m_PrefabInstance: {fileID: 2568519788450073572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1605630940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605630941}
+  - component: {fileID: 1605630942}
+  m_Layer: 0
+  m_Name: Tile (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1605630941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605630940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1605630942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605630940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 13
+  TilePrefabs:
+  - {fileID: 3792392102340112613, guid: c5ed92703fe73014f95d822d53b0193a, type: 3}
+--- !u!1 &1631566718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1631566719}
+  - component: {fileID: 1631566720}
+  m_Layer: 0
+  m_Name: Tile (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1631566719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631566718}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1631566720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631566718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 2
+  TilePrefabs:
+  - {fileID: 2234901689585657175, guid: 597ef4de823025e43bf95b4a5d505638, type: 3}
+--- !u!1 &1645636994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645636995}
+  - component: {fileID: 1645636996}
+  m_Layer: 0
+  m_Name: Tile (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645636995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645636994}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645636996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645636994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 9
+  TilePrefabs:
+  - {fileID: 2350380113374019823, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2, type: 3}
+--- !u!1 &1646858840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1646858842}
+  - component: {fileID: 1646858841}
+  m_Layer: 0
+  m_Name: TileSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1646858841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646858840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dfff5837823b45479be05a046b97310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 272422589}
+  Controller: {fileID: 690604321}
+  CurrentTiles: {fileID: 1881231208}
+  FloorPrefab: {fileID: 7406157561098167754, guid: 487f768966564d344ad351a6b11c4205,
+    type: 3}
+  PlayerPrefab: {fileID: 0}
+--- !u!4 &1646858842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646858840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1881231209}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1881231207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881231209}
+  - component: {fileID: 1881231208}
+  m_Layer: 0
+  m_Name: SimpleTiles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1881231208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881231207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a8446c3b94bfbb4fbf6ff66a43e4462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UsedAlgorithm: {fileID: 692514977}
+  TileTypes:
+  - {fileID: 603350242}
+  - {fileID: 742867051}
+  - {fileID: 1631566720}
+  - {fileID: 314005871}
+  - {fileID: 641490946}
+  - {fileID: 652944982}
+  - {fileID: 803869345}
+  - {fileID: 1307086040}
+  - {fileID: 1508457316}
+  - {fileID: 1645636996}
+  - {fileID: 1225944547}
+  - {fileID: 1951165284}
+  - {fileID: 2125078241}
+  - {fileID: 1605630942}
+  - {fileID: 1341468936}
+  - {fileID: 1205242183}
+--- !u!4 &1881231209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881231207}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 692514976}
+  - {fileID: 603350241}
+  - {fileID: 742867050}
+  - {fileID: 1631566719}
+  - {fileID: 314005870}
+  - {fileID: 641490945}
+  - {fileID: 652944981}
+  - {fileID: 803869344}
+  - {fileID: 1307086039}
+  - {fileID: 1508457315}
+  - {fileID: 1645636995}
+  - {fileID: 1225944546}
+  - {fileID: 1951165283}
+  - {fileID: 2125078240}
+  - {fileID: 1605630941}
+  - {fileID: 1341468935}
+  - {fileID: 1205242184}
+  m_Father: {fileID: 1646858842}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1951165282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1951165283}
+  - component: {fileID: 1951165284}
+  m_Layer: 0
+  m_Name: Tile (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1951165283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951165282}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1951165284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951165282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 11
+  TilePrefabs:
+  - {fileID: 3324154515112689160, guid: 42f25397e03214f4ca64bada45b78277, type: 3}
+--- !u!4 &2047297823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4427470551054391908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2125078239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2125078240}
+  - component: {fileID: 2125078241}
+  m_Layer: 0
+  m_Name: Tile (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2125078240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125078239}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1881231209}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125078241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125078239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d50134488922ed4f8cf4ee222b6e4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Type: 12
+  TilePrefabs:
+  - {fileID: 3253307010698323397, guid: 0a5178ff12af5954e8ad3310c7aee3d5, type: 3}
+--- !u!1001 &271166388574883655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931227819313303816, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923818955530911377, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923818955530911377, guid: 42f25397e03214f4ca64bada45b78277,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42f25397e03214f4ca64bada45b78277, type: 3}
+--- !u!1001 &2281543456623848311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2546663725748185860, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260200379914252318, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260200379914252318, guid: 05327489e4a44004990458010dfe117d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05327489e4a44004990458010dfe117d, type: 3}
+--- !u!1001 &2398475026800502377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7234401340687361825, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086366218282435, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073086366218282435, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c6e6feb43181fa4d8b9a62cfbdb1ac2, type: 3}
+--- !u!1001 &2568519788450073572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041206202545251785, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192473928671005403, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192473928671005403, guid: 597ef4de823025e43bf95b4a5d505638,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 597ef4de823025e43bf95b4a5d505638, type: 3}
+--- !u!4 &2587238836660288772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+    type: 3}
+  m_PrefabInstance: {fileID: 9184305065652100926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2880408763136024486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138742881981779316, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051488954101278148, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051488954101278148, guid: 4809b4c6015f0dd4aa4450a16546db2e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4809b4c6015f0dd4aa4450a16546db2e, type: 3}
+--- !u!1001 &3720861004509417874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191718979125790154, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8147239636716148961, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8147239636716148961, guid: 7dcc22169ec607f42b65e30a0a041b78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7dcc22169ec607f42b65e30a0a041b78, type: 3}
+--- !u!1001 &4195523961609331926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979636635211915109, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584178882016350506, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584178882016350506, guid: c441ed998c22a8a479e121709f784029,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c441ed998c22a8a479e121709f784029, type: 3}
+--- !u!1001 &4427470551054391908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 917494267795249903, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab14
+      objectReference: {fileID: 0}
+    - target: {fileID: 917494267795249903, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.809
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278747828928572786, guid: e6793a4f68d1b6c41aa61c83eb25a64b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6793a4f68d1b6c41aa61c83eb25a64b, type: 3}
+--- !u!1001 &4948405493385298082
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 3768617382713416784, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768617382713416784, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6201259719441273303, guid: 8a047a94e400050418e469dcce0c4974,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a047a94e400050418e469dcce0c4974, type: 3}
+--- !u!1001 &5027575636837881908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 6608766495758351834, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6608766495758351834, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903630589440650116, guid: c5ed92703fe73014f95d822d53b0193a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c5ed92703fe73014f95d822d53b0193a, type: 3}
+--- !u!1001 &5271284318131814543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689727999427993265, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217333311471169760, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217333311471169760, guid: 41367ed4ce684f34f83fdd325a2c8976,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41367ed4ce684f34f83fdd325a2c8976, type: 3}
+--- !u!1001 &5753060057792710343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107347056371863830, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257529652427541656, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257529652427541656, guid: 56363f3cfdb5b5c45832cb143687b7ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56363f3cfdb5b5c45832cb143687b7ec, type: 3}
+--- !u!1001 &6113788073732417010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 1908222481111131358, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908222481111131358, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7223740989769553822, guid: 8af6d6c160ed40f4284bb7cf1adeb878,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8af6d6c160ed40f4284bb7cf1adeb878, type: 3}
+--- !u!1001 &6248781809056969731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 1771359616476309861, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1771359616476309861, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594154462342167850, guid: 828c14f19be28374fb0a914b21466182,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 828c14f19be28374fb0a914b21466182, type: 3}
+--- !u!1001 &8068671220593679551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 648602327285843136, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693919027580248583, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_Name
+      value: FloorPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693919027580248583, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279565444389089966, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37d67255e370aaf4a869f0e865afc275,
+        type: 3}
+    - target: {fileID: 6279565444389089966, guid: 487f768966564d344ad351a6b11c4205,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 487f768966564d344ad351a6b11c4205, type: 3}
+--- !u!1001 &8477013908320231350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 57169240833685773, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab12
+      objectReference: {fileID: 0}
+    - target: {fileID: 57169240833685773, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748253772635041596, guid: 0a5178ff12af5954e8ad3310c7aee3d5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a5178ff12af5954e8ad3310c7aee3d5, type: 3}
+--- !u!1001 &9184305065652100926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 130953411}
+    m_Modifications:
+    - target: {fileID: 1830983496634127783, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_Name
+      value: MazePrefab15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830983496634127783, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.809
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6670548790106694202, guid: 6c53004a52b0db64d9c8c8373d36e879,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c53004a52b0db64d9c8c8373d36e879, type: 3}

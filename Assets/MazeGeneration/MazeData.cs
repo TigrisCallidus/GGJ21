@@ -77,6 +77,10 @@ public class MazeCell {
 
     public bool IsExit = false;
 
+    public FloorTile Floor;
+
+    public BaseTile Wall;
+
 }
 
 public enum WalkDirection {
@@ -136,6 +140,11 @@ public class TileConnection {
     public bool Horizontal = true;
 }
 
+
+[System.Serializable]
+public struct SpriteList {
+    public Sprite[] Sprites;
+}
 
 
 /*
